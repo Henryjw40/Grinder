@@ -49,8 +49,8 @@
   <script>
     function sendPushover() {
       const token = "ahtyqc594aau4aj5ftcupgky7znu64";       // Replace with your app token
-      const user = "uepjew7fboqxrd5921tun4e2p4gqs";         // Replace with your user key
-      const sound = "grinder";    // Replace with your sound (e.g., 'bike', 'alien', etc.)
+      const user = "uepjew7fboqxrd5921tun4e2p4gqse";         // Replace with your user key
+      const sound = "grindersucks";    // Replace with your sound (e.g., 'bike', 'alien', etc.)
 
       fetch("https://api.pushover.net/1/messages.json", {
         method: "POST",
@@ -61,7 +61,7 @@
           token: token,
           user: user,
           message: "🔔 You suck!",
-          title: "Grinder Alert",
+          title: "",
           sound: sound
         })
       })
